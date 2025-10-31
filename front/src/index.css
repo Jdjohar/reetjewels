@@ -1,0 +1,28 @@
+/* Add this to your global CSS or App.css */
+
+.notification-bar {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  z-index: 1050; /* Higher than navbar (default 1030) */
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* App.css or Navbar component-specific style */
+.navbar {
+  margin-top: 30px; /* Same as .notification-bar height */
+}
