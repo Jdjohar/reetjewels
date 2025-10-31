@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 // const mongoDbClient = require("mongodb").MongoClient
+// const mongoURI = 'mongodb+srv://reetcollection916_db_user:E0338IEr6oxaIIMs@cluster0.a0zbope.mongodb.net/jewelshop?retryWrites=true&w=majority';
 const mongoURI = 'mongodb+srv://reetcollection916_db_user:E0338IEr6oxaIIMs@cluster0.a0zbope.mongodb.net/jewelshop?retryWrites=true&w=majority';
 module.exports = function (callback) {
     mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
