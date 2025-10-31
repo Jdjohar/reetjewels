@@ -15,7 +15,7 @@ export default function Home() {
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);
   // const loadFoodItems = async () => {
-  //   let response = await fetch('http://localhost:5000/api/auth/foodData', {
+  //   let response = await fetch('https://reetjewels.vercel.app/api/auth/foodData', {
   //     method: 'POST',
   //     headers: {
   //       'Content-Type': 'application/json',
@@ -28,8 +28,8 @@ export default function Home() {
   const loadHomeData = async () => {
     try {
       const [productsRes, categoriesRes] = await Promise.all([
-        fetch('http://localhost:5000/api/auth/featured-products'),
-        fetch('http://localhost:5000/api/auth/categories'),
+        fetch('https://reetjewels.vercel.app/api/auth/featured-products'),
+        fetch('https://reetjewels.vercel.app/api/auth/categories'),
       ]);
 
       const featuredData = await productsRes.json();
