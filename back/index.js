@@ -49,6 +49,6 @@ app.use('/api/auth', require('./Routes/Auth'));
 
 
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is listening on http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is listening on http://localhost:${port}`);
+// });
