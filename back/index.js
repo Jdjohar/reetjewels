@@ -25,7 +25,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const corsOptions = {
   origin: [
-    "https://reetjewels.vercel.app",
+    "https://reetjewels-zhk2.vercel.app",
     "http://localhost:5173"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
